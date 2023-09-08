@@ -1,0 +1,107 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Login page</h3>
+    <form action="/login" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="Name" required><br><br>
+        <label for="password" >password</label>
+        <input type="password" name="Pass" required><br><br>
+        <input type="submit">
+        or
+        <button><a href="singup.html">singup</a></button>
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* Reset some default margin and padding */
+body, h3, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the content vertically and horizontally */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style the form */
+form {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h3>Login page</h3> -->
+        <form action="/login" method="post">
+            <label for="username">Username</label>
+            <input type="text" name="Name" required><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="Pass" required><br><br>
+            <input type="submit" value="Login">
+            <span>or</span>
+            <a href="singup.html" class="signup-link">Sign up</a>
+        </form>
+    </div>
+</body>
+</html>
